@@ -27,7 +27,7 @@
         // const liBaru = document.createElement('li');    //buat li baru
         // const teksLiBaru = document.createTextNode('item Baru');    //buat text yang akan di masukkan
         // liBaru.appendChild(teksLiBaru);     //masukkan teks
-        // ul.appendChild(liBaru);     //masukkan li baru ke ul
+        // ul.appendChild(liBaru);     //masukkan libaru ke ul
     // });
 
 

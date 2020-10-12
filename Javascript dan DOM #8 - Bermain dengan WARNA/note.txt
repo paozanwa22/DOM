@@ -1,0 +1,27 @@
+button mempunyai beberapa type
+	type="submit";	//kita butuh form untuk menggunakannya
+	type="riset";	//kita butuh form untuk menggunakannya
+	type="button";	
+
+document.body.style.backgroundColor = 
+
+getElementsByTagName 	//mengembalikan htmlColection //bersifat seperti Array
+
+khusus untuk body, kita tidak perlu menyimpan(atau mengambilnya)
+
+classList	//untuk memanipulasi kelas
+toggle 		//salah satu method	//menambah dan menghapus class
+createElement('')
+createTextNode('')
+appendChild()		//mengagabungkan/memasukkan
+setAttribute('','')		//menambah attribut
+after()		//menyimpan setelah apa
+
+display inline 		//kesamping
+
+
+//event
+onclick
+addEventListener('jenis_event', functio(){	})
+addEventListener('onclick', ...)	//saat di click
+addEventListener('change', ...)		//saat di geser
