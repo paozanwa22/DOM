@@ -102,10 +102,30 @@ p3.addEventListener('click', function() {
 });
  
  
-//Daftar Event
-mouse Event
+//Daftar Event  https://developer.mozilla.org/en-US/docs/Web/Events
+mouse Event 
+  click
+  dblclick
+  mouseover
+  mouseenter
+  mouseup
+  wheel
+  ...
 Keyboard Event
-Resources
+  keydown
+  keypress
+  keyup
+Resources Event
+Focus Event
+View Event
+  resize
+  scroll
+Form Event
+  reset
+  submit
+CSS Animation & Transition Event
+Drag & Drop Event
+dll...
 
 
 
