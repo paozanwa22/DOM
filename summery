@@ -163,7 +163,23 @@ close.forEach(function(el) {
   });
 });
 
+Javascript & DOM #12 - Event Bubbling //saat menjalankan event, event parent nya juga jalan
+close.forEach(function(el) {
+  el.addEventListener('click', function(e) {
+    e.target.parentElement.style.display = 'none';
+    e.preventDefault();
+    e.stopPropagation(); //untuk menghentikan event bubbling
+  });
+});
+  
+// study kasus jika menambahan secara realtime
+// Memanpaatkan Event Bubbling
+container.addEventListenter('click', function(e) {
+  if( e.target.className == 'close' ) {   //mentarget yang className-nya = close
+    e.target.parentElement.style.display = 'none';
+    e.preventDefault(); //untuk jaga jaga kalau yang kita click adalah tag link
+  }
+});
 
-  
-  
+
   
