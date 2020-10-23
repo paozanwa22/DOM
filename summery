@@ -1,0 +1,123 @@
+Javascript & DOM #3 - DOM Selection 
+
+getElementById(); //element
+getElementByTagName(); //HTML Colection
+getElementByClassName(); //HTML Colection
+querySelector(); //element
+querySelector All(); //HTML Colectios
+innerHTML  //mengganti tulisan
+Manipulasi nodeScope // Ruang lingkup cangkupan
+
+
+
+Javascript & DOM #5 - DOM Manipulation 
+  element.innerHTML  //merubah isi di tag HTML 
+    //judul.innerHTML = '<em>Paozan<em>';
+    //judul.innerHTML = 'Hello World';
+    
+  element.style.<property>  //Merubah property
+    //judul.style.color = 'lightblue';
+    
+  element.setAttribute()  //tambah(menimpa) attribut //id, type, dll..
+    //judul.setAttribute('class', 'container');
+  element.removeAttribute() //menghilangkan attribute
+    //a.removeAttribute('href');
+  element.getAttribute() //melihat isi attribut
+    //a.getAttribute('href');
+  
+  element.classList //melihat class apa saya yang ada pada element
+  element.classList.add()  //p2.classList.add('label');
+  element.classList.remove()  //p2.classList.remove('label');
+  element.classList.toggle()  //p2.classList.toggle('label');
+  element.classList.item()  //mengetahui item class tertentu
+    p2.classList.item(2); //melihat class urutan ke 2(hitungan dari 0)
+  element.classList.contains()  //cek class tertentu dalam sebuah element
+    p2.classList.contains('dua'); //apakah ada class dengan nama dua
+  element.classList.replace() //mengganti class yang ada dengan class baru
+    p2.classList.replace('dua', 'empat'); //mengganti dua menjadi empat 
+  ...
+  
+  
+Javascript & DOM #6 - DOM Manipulation 
+//Manipulasi Node
+  document.createElement()
+  document.createTextNode()
+  node.appendChild()
+  node.insertBefore()
+    ul.insertBefore(liBaru, li2); //ul = parent element //menyimpan setelah li2
+  parentNode.removeChild()
+    sectionA.removeChild(link); //sectionA adalah pembungkus //menghapus element link
+  parentNode.replaceChild()
+    sectionB.replaceChild(h2Baru, h4); //h2Baru Akan mereplace h4
+  ...
+  
+//Manipulasi Node (method baru)
+  parentNode.append()
+  parentNode.prepend()
+  childNode.before()
+  childNode.after()
+  childNode.remove()
+  childNode.replaceWith()
+  ...
+  
+  
+  
+Javascript & DOM #7 - DOM Events
+Cara 'mendengarkan' event  
+  Event Handler   //on<event> //(menimpa perubahan)
+    inline HTML attribute
+    element method    
+  addEventListener()  // (menambah perubahan)
+  
+// Event Handler 
+function ubahWarna() {
+  p2.style.background-color = 'lightblue';
+}  
+const p2 = document.querySelector('.p2');
+p2.onclick = ubahWarna; //jika di tambahkan () itu berarti function-nya akan langsung jalan
+//  
+// addEventListener
+const p4 = document.querySelector('section#b p');
+p4.addEventListener('click', function() {
+  alert('ok');
+});
+// 
+
+//PERBEDAAN Event Handler(menimpa) dengan addEventListener(ditambah)
+  //Event Handler(menimpa)
+const p3 = document.querySelector('.p3');
+p3.onclick = function() {
+  p3.style.backgroundColor = 'lightblue';
+}
+p3.onclick = function() {
+  p3.style.color = 'red';
+}
+  
+  //addEventListener(ditambah)  
+p3.addEventListener('click', function() {
+  p3.style.backgroundColor = 'lightblue';
+}); 
+p3.addEventListener('click', function() {
+  p3.style.color = 'red';
+});
+ 
+ 
+//Daftar Event
+mouse Event
+Keyboard Event
+Resources
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
