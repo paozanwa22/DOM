@@ -128,15 +128,31 @@ Drag & Drop Event
 dll...
 
 
-Javascript & DOM #10 - DOM Traversal  
-//penelusuran DOM berdasar element yang kita pilih
+Javascript & DOM #10 - DOM Traversal  //penelusuran DOM berdasar element yang kita pilih
+const close = document.querySelectorAll('.close');
 
-//close[i].parentElement.style.display = 'none';
-
-//close[i].addEventListentr('click', function(e) {
-  console.log(e); //e akan berisi semua inpormasi event yang terjadi 
+//
+for( let i = 0; i < close.length; i++) {
+  close[i].addEventListener('click', function(e) {
+    //close[i].parentElement.style.display = 'none';
+    e.target.parentElement.style.display = 'none';
+  });
 }
 
+//
+close.forEach(function(el) {
+  el.addEventListener('click', function(e) {
+    e.target.parentElement.style.display = 'none';
+  });
+});
+
+// DOM Traversal Method
+  parentNode              //node
+  parentElement           //element
+  nextSibling             //node
+  nextElementSibling      //element
+  previousSibling         //node
+  previousElementSibling  //element
 
 
 
